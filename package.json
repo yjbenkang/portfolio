@@ -3,17 +3,28 @@
   "version": "1.0.0",
   "description": "my portfolio",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yjbenkang/portfolio.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "yjbenkang",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yjbenkang/portfolio/issues"
   },
-  "homepage": "https://github.com/yjbenkang/portfolio#readme"
+  "homepage": "https://github.com/yjbenkang/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "nodemon": "^2.0.12"
+  }
 }

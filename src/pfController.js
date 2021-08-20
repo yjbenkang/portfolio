@@ -1,7 +1,7 @@
 import { response } from "express";
 
 export const homeController = (req, res) => {
-    return res.send("Home");
+    return res.render("index");
 };
 
 export const aboutController = (req, res) => {

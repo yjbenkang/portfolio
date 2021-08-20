@@ -4,7 +4,11 @@ import { aboutController, contactController, homeController, projectsController,
 const PORT = 5000;
 const app = express();
 const logger = morgan("dev");
+
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
 app.use(logger);
+app.use("/static", express.static("assets"));
 app.get("/", homeController);
 app.get("/about", aboutController);
 app.get("/skills", skillsController );

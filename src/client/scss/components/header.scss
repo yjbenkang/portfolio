@@ -18,6 +18,9 @@ header {
       font-size: #{$font-small};
       font-weight: 600;
       text-transform: uppercase;
+      &:hover {
+        color: $mint;
+      }
     }
   }
 }

@@ -64,6 +64,11 @@
     height: 20rem;
     border-radius: 50%;
   }
+  .snsLink {
+    &:hover {
+      color: $mint;
+    }
+  }
   @include desktop {
     height: 600px;
   }
@@ -120,6 +125,9 @@
         border-radius: 3px;
         padding: 7px 10px;
         font-weight: 200;
+        &:hover {
+          background-color: $mint;
+        }
       }
     }
   }

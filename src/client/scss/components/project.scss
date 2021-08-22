@@ -8,4 +8,9 @@
   height: 200px;
   background-size: cover;
   background-position: center;
+  transition: opacity 0.2s linear;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 }

@@ -9,8 +9,10 @@ const handleClickProject = (event, i) => {
     const modalWrapList = document.querySelectorAll('.modal_wrap');
     const modalWrap = modalWrapList[i];
     modalWrap.style.display ='block';
+    modalWrap.style.cursor = 'initial';
     const blackBg = document.querySelector('.black_bg')
     blackBg.style.display ='block';
+    blackBg.style.cursor = 'pointer';
     // body.style.overflow = 'hidden';
 
     blackBg.addEventListener("click", e => {

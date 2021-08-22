@@ -1,2 +1,11 @@
 mixin project(project)
     div.project-mixin(style=`background-image:url(${project.imgUrl});`)
+        div.modal_wrap
+            div=project.title 
+            div=project.date 
+            div=project.description 
+            a(href=`${project.githubUrl}`)
+                i.fab.fa-github.fa-lg
+            a(href=`${project.websiteUrl}`) Go to Website &rarr;
+
+

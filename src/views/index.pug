@@ -2,6 +2,7 @@ extends base
 include mixins/project
 
 block content
+    div(class="black_bg")
     a(name="home")
     div.sector.sector__home 
         div.info 
@@ -38,16 +39,16 @@ block content
     div.sector.sector__projects 
         h4.title 
             span My Projects
-        div.projects
+        div.projects#projects
             each project in projects 
                 +project(project)
             else 
                 span Sorry there is no project.
 
     a(name="contact")
+    h4.title(style="text-align:center;") Contact
     div.sector.sector__contact 
         div.contact__info
-            h4.title Contact
             div.adress 
                 i.fas.fa-map-pin
                 div.info.adress__info

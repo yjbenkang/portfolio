@@ -1,3 +1,23 @@
+.black_bg {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.modal_wrap {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 160%;
+  border: none;
+  border-radius: 15px;
+  background: $bg;
+  z-index: 3;
+}
+
 .sector {
   width: 100%;
   height: 100%;
@@ -62,7 +82,7 @@
       }
     }
     .profile {
-      width: 12rem;
+      width: 13rem;
       height: 12rem;
     }
   }
@@ -140,6 +160,10 @@
     justify-content: center;
     width: 100%;
     overflow: inherit;
+    position: relative;
+    .project-mixin {
+      position: relative;
+    }
   }
 }
 
@@ -183,8 +207,39 @@
   }
   @include tablet {
     flex-direction: column;
+    .contact__info {
+      > div {
+        flex-direction: column;
+        padding: 2rem 9rem;
+        justify-items: center;
+      }
+    }
   }
   @include mobile {
     flex-direction: column;
+    .contact__info {
+      > div {
+        flex-direction: column;
+        padding: 2rem 6rem;
+        i {
+          border: $mint 1px solid;
+          padding: 1rem 1.1rem;
+          border-radius: 50%;
+        }
+        .info {
+          align-items: center;
+          h4 {
+            font-weight: 500;
+            font-size: $font-medium;
+            margin: 1rem 0rem;
+          }
+          h5 {
+            margin-top: 1rem;
+            font-weight: 300;
+            font-size: $font-default;
+          }
+        }
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 import express from "express";
 import morgan from "morgan";
-import { aboutController, contactController, homeController, projectsController, skillsController } from "./pfController";
+import { indexController } from "./controller";
 const PORT = 5000;
 const app = express();
 const logger = morgan("dev");
@@ -8,12 +8,12 @@ const logger = morgan("dev");
 app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views");
 app.use(logger);
+app.use(express.urlencoded({ extended: true }));
 app.use("/static", express.static("assets"));
-app.get("/", homeController);
-app.get("/about", aboutController);
-app.get("/skills", skillsController );
-app.get("/projects", projectsController);
-app.get("/contact", contactController);
+
+
+app.use("/img", express.static("img"));
+app.get("/", indexController);
 
 
 const handleListening = () =>

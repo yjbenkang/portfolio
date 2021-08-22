@@ -1,0 +1,190 @@
+.sector {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.sector__home {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  i {
+    margin-right: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    div {
+      margin-bottom: 2rem;
+    }
+    .introduce {
+      background-color: $mint;
+      text-align: center;
+      font-weight: 700;
+      padding: 0.5rem;
+      border-radius: 25px 25px 25px 0px;
+      width: 50%;
+    }
+    .name {
+      font-size: #{$font-large};
+      font-weight: 800;
+    }
+    .role {
+      font-size: #{$font-default};
+    }
+  }
+  .profile {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+  @include desktop {
+    height: 600px;
+  }
+  @include tablet {
+    height: 600px;
+  }
+  @include mobile {
+    flex-direction: column-reverse;
+    .info {
+      align-items: center;
+      .introduce {
+        margin-top: 2rem;
+      }
+      .name {
+        font-size: #{$font-medium};
+      }
+    }
+    .profile {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+}
+
+.sector__about {
+  background-color: $bg2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .aboutPhoto {
+    width: 25%;
+    height: 50%;
+    margin-right: 5%;
+  }
+  .description {
+    width: 45%;
+
+    .title {
+      margin-left: 0;
+    }
+
+    .paragraph {
+      font-size: #{$font-default};
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+    .stacks {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .skill {
+        border: $mint 1px solid;
+        margin: 3px 10px;
+        border-radius: 3px;
+        padding: 7px 10px;
+        font-weight: 200;
+      }
+    }
+  }
+  @include desktop {
+    height: 600px;
+  }
+  @include tablet {
+    height: 600px;
+  }
+  @include mobile {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    .aboutPhoto {
+      width: 50%;
+      height: 30%;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .title {
+      font-size: #{$font-medium};
+      text-align: center;
+    }
+    .description {
+      width: 85%;
+    }
+  }
+}
+
+.sector__projects {
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    overflow: inherit;
+  }
+}
+
+.sector__contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  .contact__info {
+    .title {
+      text-align: center;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+      border: 0px;
+      background-color: $bg2;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      i {
+        border: $mint 1px solid;
+        padding: 1rem 1.1rem;
+        border-radius: 50%;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.2rem 1rem;
+        h4 {
+          font-weight: 700;
+        }
+        h5 {
+          margin-top: 1rem;
+          font-weight: 300;
+          font-size: $font-small;
+        }
+      }
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+}

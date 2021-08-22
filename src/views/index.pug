@@ -1,10 +1,73 @@
 extends base
+include mixins/project
 
 block content
-    div
-        a(name="home") Home
-        a(name="about") About
-        a(name="skills") Skills
-        a(name="projects") Projects
-        a(name="contact") Contact
+    a(name="home")
+    div.sector.sector__home 
+        div.info 
+            div.introduce yjbenkang
+            div.name 강용진
+            div.role Fullstack Developer
+            div.email 
+                i.fas.fa-envelope
+                span kyongjin1234@gmail.com
+            div.phoneNumber 
+                i.fas.fa-phone
+                span +82 10 9585 9552
+            div.location 
+                i.fas.fa-map-marker-alt
+                span Incheon, South Korea
+            div.snsLink
+                a.github(href="https://github.com/yjbenkang")
+                    i.fab.fa-github.fa-lg  yjbenkang
+        img.profile(src= "img/profile.jpeg") 
+
+    a(name="about")
+    div.sector.sector__about 
+        img.aboutPhoto(src ="img/aboutPhoto.png")
+        div.description
+            h4.title About Me
+            p.paragraph Hello, I’m a Seongho Jung, fullstack web-developer based on Seoul, S.Korea. I have rich experience in fully responsive web development & building and customization. Also I am good at communicate with clients and co-workers.
+            div.stacks
+                each skill in skills 
+                    div.skill=skill 
+                else 
+                    span Sorry nothing found.
+
+    a(name="projects")
+    div.sector.sector__projects 
+        h4.title 
+            span My Projects
+        div.projects
+            each project in projects 
+                +project(project)
+            else 
+                span Sorry there is no project.
+
+    a(name="contact")
+    div.sector.sector__contact 
+        div.contact__info
+            h4.title Contact
+            div.adress 
+                i.fas.fa-map-pin
+                div.info.adress__info
+                    h4 Adress
+                    h5 Incheon, South Korea
+            div.email
+                i.fas.fa-envelope
+                div.info.email__info
+                    h4 Email
+                    h5 kyongjin1234@gmail.com
+            div.phoneNumber
+                i.fas.fa-phone
+                div.info.phoneNumber__info
+                    h4 Phone Number
+                    h5 +82 10 9585 9552
+        form(method="POST")
+            input(placeholder="Name", name="name", type="text", required)
+            input(placeholder="Email", name="email", type="email", required)
+            input(placeholder="Message", name="message", type="text", required)
+            input(type="submit", value="Send Message")
+    
+
 

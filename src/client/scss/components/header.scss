@@ -1,0 +1,22 @@
+header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  background-color: $bg;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      margin-left: 2.5rem;
+      font-size: #{$font-small};
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}

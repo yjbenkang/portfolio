@@ -8,9 +8,61 @@
   height: 200px;
   background-size: cover;
   background-position: center;
-  transition: opacity 0.2s linear;
+  font-weight: 300;
+  font-size: 12px;
   &:hover {
     cursor: pointer;
-    opacity: 0.6;
+  }
+  .modal_wrap {
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    .project__date {
+      color: gray;
+    }
+    .project__title {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+    .project__desc {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .project__skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 20px;
+      .project__skill {
+        font-size: 12px;
+        border: 1px solid $mint;
+        text-align: center;
+        border-radius: 4px;
+        padding: 4px;
+        &:hover {
+          background-color: $mint;
+          color: black;
+        }
+      }
+    }
+    .project__links {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 20px;
+      .project__github {
+        &:hover {
+          color: $mint;
+        }
+      }
+      .project__web {
+        font-size: 15px;
+        font-weight: 200;
+        &:hover {
+          color: $mint;
+        }
+      }
+    }
   }
 }

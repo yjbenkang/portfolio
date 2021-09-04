@@ -157,6 +157,27 @@ export const indexController = (req, res) => {
         githubUrl:"https://github.com/yjbenkang/yongflix",
         websiteUrl:"https://frosty-blackwell-adf51f.netlify.app/",
         },
+
+        {title:"포트폴리오 웹사이트", 
+        imgUrl:"img/project11.png",
+        date: "2021.8-NOW", 
+        skills: [
+            "Node.js",
+            "ExpressJS",
+            "ES6",
+            "Vanilla JS",
+            "Pug",
+            "Webpack",
+            "Babel",
+            "SCSS",
+            "Multer",
+            "Heroku",
+            "AWS S3"
+            ], 
+        description:"Node.js의 웹프레임워크 Express 기반으로 본인 소개/보유역량/웹프로젝트/연락처를 소개하는 포트폴리오 웹&모바일웹사이트를 제작하였습니다.",
+        githubUrl:"https://github.com/yjbenkang/portfolio",
+        // websiteUrl:"https://yjbenkang.github.io/movie_app_2021/#/",
+        },
         
         {title:"YongWeather", 
         imgUrl:"img/project10.png",

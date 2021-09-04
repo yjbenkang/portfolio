@@ -1,5 +1,5 @@
 mixin project(project)
-    div.project-mixin(style=`background-image:url(${project.imgUrl});`)
+    div.project-mixin.project-mixin__hover(style=`background-image:url(${project.imgUrl});`)
         div.modal_wrap
             div.project__date=project.date 
             div.project__title=project.title 
@@ -9,9 +9,9 @@ mixin project(project)
                     div.project__skill=skill
             div.project__links
                 if project.githubUrl
-                    a.project__github(href=`${project.githubUrl}`)
+                    a.project__github(href=`${project.githubUrl}` target="_blank")
                         i.fab.fa-github.fa-lg   Go to Github &rarr;
                 if project.websiteUrl
-                    a.project__web(href=`${project.websiteUrl}`) Go to Website &rarr;
+                    a.project__web(href=`${project.websiteUrl}` target="_blank") Go to Website &rarr;
 
 

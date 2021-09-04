@@ -8,7 +8,7 @@ block content
         div.info 
             div.introduce yjbenkang
             div.name 강용진
-            div.role Fullstack Developer
+            div.role Preparing for Back-End Developer
             div.email 
                 i.fas.fa-envelope
                 span kyongjin1234@gmail.com
@@ -19,7 +19,7 @@ block content
                 i.fas.fa-map-marker-alt
                 span Incheon, South Korea
             div.snsLink
-                a.github(href="https://github.com/yjbenkang")
+                a.github(href="https://github.com/yjbenkang" target="_blank")
                     i.fab.fa-github.fa-lg  yjbenkang
         img.profile(src= "img/profile.jpeg") 
 
@@ -28,12 +28,65 @@ block content
         img.aboutPhoto(src ="img/aboutPhoto.png")
         div.description
             h4.title About Me
-            p.paragraph 안녕하세요, 풀스택 개발자를 꿈꾸는 강용진입니다. 
+            p.paragraph 안녕하세요, 웹백엔드 개발자를 준비중인 강용진입니다. 프론트엔드&백엔드에 필요한 전반적인 지식을 갖추고 있으며, 개발에 대한 열정과 함께 끊임없이 배우고 익히며 매일 성장하고 있습니다. 개발을 통해 서비스를 구현하고 만든 서비스를 개선해나가며 완성시키는 것을 좋아합니다. 저는 노마드 아카데미의 열혈 수강생이며, 4차 산업혁명에 있어 중요한 빅데이터/머신러닝 역량 또한 갖추고 있습니다.
+
             div.stacks
                 each skill in skills 
                     div.skill=skill 
                 else 
                     span Sorry nothing found.
+
+    a(name="skills")
+    div.sector.sector__skills
+        h4.title Skills & Certificates
+        div.skillparts
+            div.skillpart.frontend
+                h2 Front-End
+                div
+                    span HTML 
+                    span CSS 
+                    span JS/ES6
+                    span Pug 
+                    span SCSS 
+                    span Tailwind CSS
+                    span ReactJS
+            div.skillpart.backend
+                h2 Back-end
+                div
+                    span Node.js 
+                    span ExpressJS 
+                    span Python 
+                    span Django 
+                    span Flask 
+                    span REST API 
+                    span GraphQL
+            div.skillpart.database
+                h2 SQL/NoSQL
+                div
+                    span MySQL 
+                    span PostgreSQL 
+                    span MongoDB 
+            div.skillpart.deploy
+                h2 Deploy 
+                div
+                    span AWS Elastic Beanstalk 
+                    span AWS EC2 
+                    span AWS S3 
+                    span AWS RDS 
+                    span Heroku 
+                    span Netlify
+            div.versionControl
+                h2 Version-Control
+                div
+                    span Git
+                    span Github
+            div.certificate
+                h2 Certificate
+                div
+                    span ADsP(데이터분석 준전문가)
+                    span SQLD(SQL 개발자)
+                    span 정보처리기사(필기합격)
+
 
     a(name="projects")
     div.sector.sector__projects 
@@ -64,11 +117,11 @@ block content
                 div.info.phoneNumber__info
                     h4 Phone Number
                     h5 +82 10 9585 9552
-        form(method="POST")
-            input(placeholder="Name", name="name", type="text", required)
-            input(placeholder="Email", name="email", type="email", required)
-            input(placeholder="Message", name="message", type="text", required)
-            input(type="submit", value="Send Message")
+        //- form(method="POST")
+        //-     input(placeholder="Name", name="name", type="text", required)
+        //-     input(placeholder="Email", name="email", type="email", required)
+        //-     input(placeholder="Message", name="message", type="text", required)
+        //-     input(type="submit", value="Send Message")
     
 
 

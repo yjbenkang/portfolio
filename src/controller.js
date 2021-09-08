@@ -36,32 +36,32 @@ export const indexController = (req, res) => {
         websiteUrl:"https://yjbenkang.github.io/kokoa-clone-2021/",
         },
         
-        {title:"그림판", 
-        imgUrl:"img/project7.png",
-        date: "2021.2", 
-        skills: [
-            "Vanilla JS",
-            "HTML5",
-            "CSS",
-            "GitHub"
-            ], 
-        description:'그림판 기능 구현(색상 선택,굵기 조절,지우개,색 채우기,그림 파일 저장)',
-        githubUrl:"https://github.com/yjbenkang/paintjs",
-        websiteUrl:"https://yjbenkang.github.io/paintjs/",
-        },
-        {title:"오늘할일", 
-        imgUrl:"img/project8.png",
-        date: "2021.3", 
-        skills: [
-            "Vanilla JS",
-            "HTML5",
-            "CSS",
-            "GitHub"
-            ], 
-        description:'Vanilla JS로 개인 일상을 관리하는 서비스 개발(현재시각 안내,날씨 API를 호출하여 위경도에 따른 날씨 안내,오늘 할일 작성 및 삭제 기능,새로고침 시 랜덤으로 배경사진 변경)',
-        githubUrl:"https://github.com/yjbenkang/js-basics",
-        websiteUrl:"https://yjbenkang.github.io/js-basics/",
-        },
+        // {title:"그림판", 
+        // imgUrl:"img/project7.png",
+        // date: "2021.2", 
+        // skills: [
+        //     "Vanilla JS",
+        //     "HTML5",
+        //     "CSS",
+        //     "GitHub"
+        //     ], 
+        // description:'그림판 기능 구현(색상 선택,굵기 조절,지우개,색 채우기,그림 파일 저장)',
+        // githubUrl:"https://github.com/yjbenkang/paintjs",
+        // websiteUrl:"https://yjbenkang.github.io/paintjs/",
+        // },
+        // {title:"오늘할일", 
+        // imgUrl:"img/project8.png",
+        // date: "2021.3", 
+        // skills: [
+        //     "Vanilla JS",
+        //     "HTML5",
+        //     "CSS",
+        //     "GitHub"
+        //     ], 
+        // description:'Vanilla JS로 개인 일상을 관리하는 서비스 개발(현재시각 안내,날씨 API를 호출하여 위경도에 따른 날씨 안내,오늘 할일 작성 및 삭제 기능,새로고침 시 랜덤으로 배경사진 변경)',
+        // githubUrl:"https://github.com/yjbenkang/js-basics",
+        // websiteUrl:"https://yjbenkang.github.io/js-basics/",
+        // },
         {title:"에어비앤비 클론코딩", 
         imgUrl:"img/project9.png",
         date: "2021.4-2021.6", 
@@ -77,7 +77,16 @@ export const indexController = (req, res) => {
             "GitHub",
             "AWS RDS"
             ], 
-        description:'Django로 Airbnb 클론코딩(객실 예약 웹서비스)',
+        description:`
+        객실 예약 서비스를 위한 데이터 베이스 모델링&
+        유저 CRUD 및 로그인/로그아웃 기능 개발&
+        객실 검색/좋아요 기능 개발&
+        객실 CRUD 기능 개발&
+        객실 예약 기능 개발(예약자의 예약 신청, 호스트의 예약 확정)&
+        날짜에 따른 예약현황 반영 기능 개발(날짜 지나면 완료된 예약, 사용 전일시 사용예정)&
+        예약내역을 현황별(대기중,예약확정,취소)로 분류하여 보여주는 기능 개발&
+        객실 사용 후 리뷰 남기기 기능 개발&
+        호스트-예약자간 대화 기능 개발`,
         githubUrl:"https://github.com/yjbenkang/airbnb_clone",
         // websiteUrl:"https://yjbenkang.github.io/js-basics/",
         },
@@ -96,7 +105,13 @@ export const indexController = (req, res) => {
             "AWS RDS",
             "PostgreSQL"
             ], 
-        description:'Python 웹 프레임워크 Django를 활용한 도서,영화 및 인물 소개 웹사이트 개발',
+        description:`Python 웹 프레임워크 Django를 활용한 도서,영화 및 인물 소개 웹사이트입니다. 
+        도서, 영화 및 인물 소개 서비스를 위한 데이터 베이스 모델링하였고,
+        유저 CRUD 및 로그인/로그아웃 기능 개발&
+        도서/영화/인물 CRUD 기능 개발&
+        리뷰 CRUD 기능 개발&
+        검색 기능 개발&
+        카테고리(장르)별 필터링 검색 기능을 개발했습니다. `,
         githubUrl:"https://github.com/yjbenkang/yjmedia",
         // websiteUrl:"https://yjbenkang.github.io/movie_app_2021/#/",
         },
@@ -127,19 +142,19 @@ export const indexController = (req, res) => {
         websiteUrl:"https://yongtube.herokuapp.com/",
         },
         
-        {title:"영화소개 웹사이트ver.1", 
-        imgUrl:"img/project4.png",
-        date: "2021.7", 
-        skills: [
-            "ReactJS",
-            "CSS3",
-            "Node.js",
-            "ES6"
-            ], 
-        description:"영화 메타데이터를 제공하는 YTS API를 활용한 영화 소개 리액트 앱",
-        githubUrl:"https://github.com/yjbenkang/movie_app_2021",
-        websiteUrl:"https://yjbenkang.github.io/movie_app_2021/#/",
-        },
+        // {title:"영화소개 웹사이트ver.1", 
+        // imgUrl:"img/project4.png",
+        // date: "2021.7", 
+        // skills: [
+        //     "ReactJS",
+        //     "CSS3",
+        //     "Node.js",
+        //     "ES6"
+        //     ], 
+        // description:"영화 메타데이터를 제공하는 YTS API를 활용한 영화 소개 리액트 앱",
+        // githubUrl:"https://github.com/yjbenkang/movie_app_2021",
+        // websiteUrl:"https://yjbenkang.github.io/movie_app_2021/#/",
+        // },
 
         {title:"yongflix", 
         imgUrl:"img/project2.png",
@@ -179,23 +194,23 @@ export const indexController = (req, res) => {
         // websiteUrl:"https://yjbenkang.github.io/movie_app_2021/#/",
         },
         
-        {title:"YongWeather", 
-        imgUrl:"img/project10.png",
-        date: "2021.8", 
-        skills: [
-            "React Native",
-            "Expo",
-            "Node.js",
-            "Babel",
-            "Yarn",
-            "Axios"
-            ], 
-        description:'Openweathermap API를 활용하여 위치기반 날씨앱(날씨, 현재기온, 최고기온, 최저기온, 풍속 정보 제공)',
-        githubUrl:"https://github.com/yjbenkang/yong-weather",
-        // websiteUrl:"https://yjbenkang.github.io/movie_app_2021/#/",
-        },
+        // {title:"YongWeather", 
+        // imgUrl:"img/project10.png",
+        // date: "2021.8", 
+        // skills: [
+        //     "React Native",
+        //     "Expo",
+        //     "Node.js",
+        //     "Babel",
+        //     "Yarn",
+        //     "Axios"
+        //     ], 
+        // description:'Openweathermap API를 활용하여 위치기반 날씨앱(날씨, 현재기온, 최고기온, 최저기온, 풍속 정보 제공)',
+        // githubUrl:"https://github.com/yjbenkang/yong-weather",
+        // // websiteUrl:"https://yjbenkang.github.io/movie_app_2021/#/",
+        // },
 
-        {title:"영화소개 웹사이트ver.2", 
+        {title:"영화소개 웹사이트", 
         imgUrl:"img/project5.png",
         date: "2021.9", 
         skills: [

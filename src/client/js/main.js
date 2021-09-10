@@ -5,26 +5,26 @@ const projects = document.querySelectorAll('.project-mixin')
 let scrollPosition = 0;
 
 
-const handleHoverProject= (event,i) => {
-    const project = projects[i];
-    const preDescription = project.querySelector(".preDescription");
-    const Image = project.style.backgroundImage;
-    project.style.backgroundImage="none";
-    project.style.backgroundColor="rgb(25, 188, 155)"; 
-    preDescription.innerText="hi";    
+// const handleHoverProject= (event,i) => {
+//     const project = projects[i];
+//     const preDescription = project.querySelector(".preDescription");
+//     const Image = project.style.backgroundImage;
+//     project.style.backgroundImage="none";
+//     project.style.backgroundColor="rgb(25, 188, 155)"; 
+//     preDescription.innerText="hi";    
 
     
-    project.addEventListener("mouseleave", (e) => {
-        project.style.backgroundImage=Image;
-        project.style.backgroundColor="none"; 
-        preDescription.innerText="";
+//     project.addEventListener("mouseleave", (e) => {
+//         project.style.backgroundImage=Image;
+//         project.style.backgroundColor="none"; 
+//         preDescription.innerText="";
         
 
         
-    })
+//     })
 
 
-};
+// };
 const handleClickProject = (event, i) => {
     const project = projects[i];
     const preDescription = project.querySelector(".preDescription");

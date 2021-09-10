@@ -1,5 +1,6 @@
 mixin project(project)
     div.project-mixin.project-mixin__hover(style=`background-image:url(${project.imgUrl});`)
+        div.preDescription
         div.modal_wrap
             div.project__date=project.date 
             div.project__title=project.title 

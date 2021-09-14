@@ -19,7 +19,7 @@ const handleHoverProject= (event,i) => {
     project.addEventListener("mouseleave", (e) => {
         project.style.backgroundImage=Image;
         project.style.backgroundColor="none"; 
-        project.removeChild(letsee);
+        letsee.style.display="none";
  
     })
     project.addEventListener("click", (event) => {
